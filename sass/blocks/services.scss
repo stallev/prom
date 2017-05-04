@@ -10,7 +10,8 @@
     text-align: center;
     color: $blue-bg-color;
     font-family: 'Days', Arial, sans-serif;
-    font-size: $fsz30;
+    font-size: $fsz20;
+    text-transform: uppercase;
     font-weight: 700;
     padding: 10px 0;
   }
@@ -21,9 +22,10 @@
   }
   &__item{
     display: inline-block;
-      text-align: center;
-      width: 230px;
-      margin-bottom: 30px;
+    text-align: center;
+    width: 230px;
+    margin-bottom: 5px;
+    vertical-align: top;
       &-image{
         position: relative;
         margin: 0 auto;
@@ -37,9 +39,9 @@
         }
     }
     &-description{
-      padding: 20px 0;
+      padding: 15px 5px;
       color: $body-color;
-      font-size: $fsz15;
+      font-size: $fsz16;
       font-weight: 700;
       line-height: $lh17;
       text-transform: uppercase;

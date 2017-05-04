@@ -1,8 +1,19 @@
 .logo{
+  position: relative;
   display: table-cell;
-  padding: 40px 0;
+  padding: 27px 0;
   width: 167px;
   background-color: $body-color;
+  &::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -20px;
+    width: 20px;
+    height: 119px;
+    background-image: url("../img/rectangleh1.png");
+    background-repeat: no-repeat;
+  }
   &__image{
     display: block;
     margin: 0 auto;

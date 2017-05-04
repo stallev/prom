@@ -1,6 +1,6 @@
 .slide-title{
-  padding: 15px;
-  width: 507px;
+  padding: 30px;
+  width: 450px;
   &__text{
     font-size: $fsz26;
     font-weight: 700;
@@ -14,10 +14,28 @@
 .carousel-caption{
   right: 0;
   left: 20px;
+  bottom: -25px;
   padding-bottom: 35px;
 }
 .item__text-content{
-  width: 375px;
+  width: 300px;
   font-size: $fsz16;
   color: $brown-color;
+  text-align: left;
+  text-shadow: none;
+}
+.carousel-indicators {
+  bottom: -12px;
+  left: 70px;
+}
+.carousel-indicators li,
+.carousel-indicators .active{
+  width: 33px;
+  height: 7px;
+  margin: 0;
+  border-radius: 0;
+  background-color: $brown-color;
+}
+.carousel-indicators .active{
+  background-color: $blue-bg-color;
 }

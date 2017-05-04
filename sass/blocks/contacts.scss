@@ -1,12 +1,29 @@
 .contacts{
+  position: relative;
   display: table-cell;
-  width: 211px;
+  width: 214px;
+  box-sizing: border-box;
+  padding-left: 22px;
   font-size: $fsz18;
   line-height: $lh19;
   vertical-align: middle;
   text-align: right;
+  border-left: 2px solid $body-color;
+  &::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: -20px;
+    width: 20px;
+    height: 119px;
+    background-image: url("../img/rectangleh2.png");
+  }
+  &__phones{
+    margin-bottom: 5px;
+  }
   &__phones-title,
   &__work-time-title{
     font-weight: normal;
+    text-transform: uppercase;
   }
 }
