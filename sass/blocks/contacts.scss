@@ -12,11 +12,13 @@
   &::before{
     position: absolute;
     content: '';
-    top: -10px;
+    top: 0;
     right: -20px;
-    width: 20px;
-    height: 119px;
-    background-image: url("../img/rectangleh2.png");
+    width: 0;
+    height: 148px;
+    border-top: 0 solid transparent;
+    border-bottom: 21px solid transparent;
+    border-left: 18px solid $dark-blue;
   }
   &__phones{
     margin-bottom: 5px;
@@ -26,4 +28,11 @@
     font-weight: normal;
     text-transform: uppercase;
   }
+}
+.x{
+  width: 0;
+  height: 50px;
+  border-left: 50px solid green;
+  border-top: 0 solid transparent;
+  border-bottom: 50px solid transparent;
 }

@@ -6,12 +6,13 @@
     &::before{
       position: absolute;
       content: '';
-      left: -40px;
-      top: -37px;
-      width: 20px;
-      height: 102px;
-      background-image: url("../img/rectanglef1.png");
-      background-repeat: no-repeat;
+      top: -38px;
+      right: 228px;
+      width: 0;
+      height: 92px;
+      border-bottom: 0 solid transparent;
+      border-top: 21px solid transparent;
+      border-right: 18px solid #0065a1;
     }
   }
   &__address-content{
@@ -25,11 +26,13 @@
     &::before{
       position: absolute;
       content: '';
-      top: -21px;
-      right: -40px;
-      width: 20px;
-      height: 102px;
-      background-image: url("../img/rectanglef2.png");
+      top: -20px;
+      left: 150px;
+      width: 0;
+      height: 92px;
+      border-bottom: 0 solid transparent;
+      border-top: 21px solid transparent;
+      border-left: 18px solid #0065a1;
     }
   }
 }
