@@ -7,7 +7,6 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var server = require('browser-sync').create();
 var csso = require('gulp-csso');
-var gulpMerge = require('merge2');
 var cssComb = require('gulp-csscomb');
 var spritesmith = require('gulp.spritesmith');
 var imagemin = require('gulp-imagemin');
@@ -57,18 +56,6 @@ gulp.task('copy', function(){
     base: '.'
   })
     .pipe(gulp.dest('build'));
-});
-
-gulp.task('sprite', function () {
-  var spriteData = gulp.src('img/*.png').pipe(spritesmith({
-    imgName: 'sprite.png',
-    cssName: 'sprite.css'
-  }));
-  var imgStream = spriteData.img
-    .pipe(gulp.dest('img/'));
-  var cssStream = spriteData.css
-    .pipe(gulp.dest('sass/global/'));
-  return gulpMerge(imgStream, cssStream);
 });
 
 gulp.task('copyBootstrapJS', function(){
