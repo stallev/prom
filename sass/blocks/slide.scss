@@ -1,0 +1,23 @@
+.slide-title{
+  padding: 15px;
+  width: 507px;
+  &__text{
+    font-size: $fsz26;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+.slide-title{
+  background-color: #575757;
+}
+.carousel-caption{
+  right: 0;
+  left: 20px;
+  padding-bottom: 35px;
+}
+.item__text-content{
+  width: 375px;
+  font-size: $fsz16;
+  color: $brown-color;
+}

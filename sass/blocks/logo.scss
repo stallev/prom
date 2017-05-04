@@ -1,0 +1,10 @@
+.logo{
+  display: table-cell;
+  padding: 40px 0;
+  width: 167px;
+  background-color: $body-color;
+  &__image{
+    display: block;
+    margin: 0 auto;
+  }
+}

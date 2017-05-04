@@ -1,0 +1,12 @@
+.contacts{
+  display: table-cell;
+  width: 211px;
+  font-size: $fsz18;
+  line-height: $lh19;
+  vertical-align: middle;
+  text-align: right;
+  &__phones-title,
+  &__work-time-title{
+    font-weight: normal;
+  }
+}

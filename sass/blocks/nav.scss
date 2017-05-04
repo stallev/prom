@@ -1,0 +1,19 @@
+.nav{
+  &--header{
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    width: 560px;
+  }
+  &__link{
+    &--header-nav{
+      display: inline-block;
+      margin-right: 30px;
+      font-size: $fsz20;
+      font-weight: 700;
+      text-transform: uppercase;
+
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.services{
+  background-color: $blue-bg-color;
+  &__title{
+    margin: 0 auto;
+    margin-bottom: 28px;
+    background-image: url("../img/serv-header-bg.svg");
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: $blue-bg-color;
+    font-family: 'Days', Arial, sans-serif;
+    font-size: $fsz30;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  &__list{
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  &__item{
+    display: inline-block;
+      text-align: center;
+      width: 230px;
+      margin-bottom: 30px;
+      &-image{
+        position: relative;
+        margin: 0 auto;
+        width: 131px;
+        height: 131px;
+        background-color: $body-color;
+        border-radius: 50%;
+        & img{
+          position: absolute;
+          left: -15px;
+        }
+    }
+    &-description{
+      padding: 20px 0;
+      color: $body-color;
+      font-size: $fsz15;
+      font-weight: 700;
+      line-height: $lh17;
+      text-transform: uppercase;
+    }
+  }
+}
