@@ -1,20 +1,5 @@
 .our-guarantees{
   background-color: $brown-color;
-  &__title{
-    margin: 0 auto;
-    margin-bottom: 17px;
-    background-image: url("../img/serv-header-bg.svg");
-    background-position-x: center;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    text-align: center;
-    font-family: 'Days', Arial, sans-serif;
-    color: $brown-color;
-    font-size: $fsz20;
-    text-transform: uppercase;
-    padding: 10px 0;
-    font-weight: 700;
-  }
   &__list{
     display: inline-block;
     font-size: 0;

@@ -1,22 +1,5 @@
 .about-us{
   position: relative;
-  &__title{
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    left: calc(50% - 125px);
-    top: 0;
-    text-align: center;
-    color: $body-color;
-    font-family: 'Days', Arial, sans-serif;
-    font-size: $fsz20;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 10px 0;
-    background-image: url("../img/about-us-title-bg.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-  }
   &__content{
     width: 630px;
     padding: 40px 0 15px 0;

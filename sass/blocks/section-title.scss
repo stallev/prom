@@ -1,0 +1,56 @@
+.section-title{
+  position: relative;
+  margin: 0 auto;
+  width: 245px;
+  margin-bottom: 28px;
+  text-align: center;
+  font-family: 'Days', Arial, sans-serif;
+  font-size: $fsz20;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px 0;
+  &::before{
+    position: absolute;
+    content: "";
+    top: 1px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 46px solid $blue-bg-color;
+    border-right: 20px solid transparent;
+  }
+  &::after{
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 20px solid transparent;
+    border-bottom: 46px solid $blue-bg-color;
+  }
+  &--services{
+    color: $blue-bg-color;
+    background-color: $body-color;
+  }
+  &--about-us{
+    background-color: $blue-bg-color;
+    color: $body-color;
+  }
+  &--our-guarantees{
+    color: $brown-color;
+    background-color: $body-color;
+  }
+}
+.section-title--services::before,
+.section-title--services::after{
+  border-bottom-color: $blue-bg-color;
+}
+.section-title--about-us::before,
+.section-title--about-us::after{
+  border-bottom-color: $body-color;
+}
+.section-title--our-guarantees::before,
+.section-title--our-guarantees::after{
+  border-bottom-color: $brown-color;
+}
