@@ -371,31 +371,9 @@ h4
 {
     position: relative;
 }
-.about-us__title
-{
-    font-family: 'Days', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-
-    position: absolute;
-    top: 0;
-    left: calc(50% - 125px);
-
-    width: 250px;
-    height: 50px;
-    padding: 10px 0;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: white;
-    background-image: url('../img/about-us-title-bg.png');
-    background-repeat: no-repeat;
-    background-position-x: center;
-}
 .about-us__content
 {
-    width: 630px;
+    width: 639px;
     padding: 40px 0 15px 0;
 }
 .about-us__content-item
@@ -676,25 +654,6 @@ h4
 {
     background-color: #575757;
 }
-.our-guarantees__title
-{
-    font-family: 'Days', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 700; 
-
-    margin: 0 auto;
-    margin-bottom: 17px;
-    padding: 10px 0;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #575757;
-    background-image: url('../img/serv-header-bg.svg');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
-}
 .our-guarantees__list
 {
     font-size: 0;
@@ -767,28 +726,87 @@ h4
     background-image: url('../img/consult.svg');
 }
 
-.services
-{
-    background-color: #2f83ba;
-}
-.services__title
+.section-title
 {
     font-family: 'Days', Arial, sans-serif;
     font-size: 20px;
     font-weight: 700;
 
+    position: relative;
+
+    width: 245px;
     margin: 0 auto;
-    margin-bottom: 28px;
-    padding: 10px 0; 
+    margin-bottom: 22px;
+    padding: 12px 0; 
 
     text-align: center;
     text-transform: uppercase;
+}
+.section-title::before
+{
+    position: absolute;
+    top: 1px;
+    left: 0;
 
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-right: 20px solid transparent; 
+    border-bottom: 46px solid #2f83ba;
+}
+.section-title::after
+{
+    position: absolute;
+    top: 1px;
+    right: 0;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-bottom: 46px solid #2f83ba; 
+    border-left: 20px solid transparent;
+}
+.section-title--services
+{
     color: #2f83ba;
-    background-image: url('../img/serv-header-bg.svg');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
+    background-color: white;
+}
+.section-title--about-us
+{
+    color: white; 
+    background-color: #2f83ba;
+}
+.section-title--our-guarantees
+{
+    color: #575757;
+    background-color: white;
+}
+
+.section-title--services::before,
+.section-title--services::after
+{
+    border-bottom-color: #2f83ba;
+}
+
+.section-title--about-us::before,
+.section-title--about-us::after
+{
+    border-bottom-color: white;
+}
+
+.section-title--our-guarantees::before,
+.section-title--our-guarantees::after
+{
+    border-bottom-color: #575757;
+}
+
+.services
+{
+    background-color: #2f83ba;
 }
 .services__list
 {
@@ -801,7 +819,7 @@ h4
 {
     display: inline-block;
 
-    width: 230px;
+    width: 235px;
     margin-bottom: 5px;
 
     text-align: center;
@@ -834,6 +852,44 @@ h4
     text-transform: uppercase; 
 
     color: white;
+}
+
+.services__item:nth-of-type(2) img
+{
+    top: 6px;
+    left: -12px;
+}
+
+.services__item:nth-of-type(3) img
+{
+    top: 11px;
+    left: -31px;
+}
+
+.services__item:nth-of-type(4) img
+{
+    top: 8px; 
+    left: -3px;
+}
+
+.services__item:nth-of-type(5) img
+{
+    top: 6px;
+    left: -24px;
+
+    max-width: 120%;
+}
+
+.services__item:nth-of-type(6) img
+{
+    top: 4px;
+    left: -17px;
+}
+
+.services__item:nth-of-type(7) img
+{
+    top: 7px;
+    left: -6px;
 }
 
 .slide-title
