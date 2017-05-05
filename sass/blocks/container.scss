@@ -8,9 +8,24 @@
     background-repeat: no-repeat;
     background-position-x: 100%;
   }
+  &--header-upper{
+    position: relative;
+    background-image: url("../img/cont_upper_header_bg.png");
+    background-repeat: repeat-y;
+    &::after{
+      position: absolute;
+      content: "";
+      width: 980px;
+      height: 20px;
+      background-image: url("../img/cont_upper_header_bg.png");
+      background-repeat: repeat-y;
+      bottom: -20px;
+      left: 0;
+    }
+  }
   &--header-bottom{
     box-sizing: border-box;
-    padding-top: 22px;
+    padding-top: 42px;
     padding-bottom: 13px;
   }
   &--footer-container{

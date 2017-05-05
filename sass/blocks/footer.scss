@@ -1,38 +1,37 @@
 .footer{
   background-color: $blue-bg-color;
   color: $body-color;
-  &__address{
-    position: relative;
-    &::before{
-      position: absolute;
-      content: '';
-      top: -38px;
-      right: 228px;
-      width: 0;
-      height: 92px;
-      border-bottom: 0 solid transparent;
-      border-top: 21px solid transparent;
-      border-right: 18px solid #0065a1;
-    }
-  }
   &__address-content{
     font-size: $fsz18;
     line-height: $lh19;
   }
   &__develop{
-    position: relative;
     display: table-cell;
     vertical-align: middle;
-    &::before{
-      position: absolute;
-      content: '';
-      top: -20px;
-      left: 150px;
-      width: 0;
-      height: 92px;
-      border-bottom: 0 solid transparent;
-      border-top: 21px solid transparent;
-      border-left: 18px solid #0065a1;
-    }
+  }
+}
+.decor1{
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    top: -21px;
+    right: 20px;
+    width: 0;
+    height: 92px;
+    border-bottom: 0 solid transparent;
+    border-top: 21px solid transparent;
+    border-right: 18px solid $dark-blue;
+  }
+  &::after{
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 960px;
+    width: 0;
+    height: 92px;
+    border-bottom: 0 solid transparent;
+    border-top: 21px solid transparent;
+    border-left: 18px solid $dark-blue;
   }
 }
