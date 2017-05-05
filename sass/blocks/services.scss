@@ -8,7 +8,7 @@
   &__item{
     display: inline-block;
     text-align: center;
-    width: 230px;
+    width: 235px;
     margin-bottom: 5px;
     vertical-align: top;
       &-image{
@@ -32,4 +32,29 @@
       text-transform: uppercase;
     }
   }
+}
+.services__item:nth-of-type(2) img{
+  top: 6px;
+  left: -12px;
+}
+.services__item:nth-of-type(3) img{
+  top: 11px;
+  left: -31px;
+}
+.services__item:nth-of-type(4) img{
+  left: -3px;
+  top: 8px;
+}
+.services__item:nth-of-type(5) img{
+  top: 6px;
+  left: -24px;
+  max-width: 120%;
+}
+.services__item:nth-of-type(6) img{
+  top: 4px;
+  left: -17px;
+}
+.services__item:nth-of-type(7) img{
+  top: 7px;
+  left: -6px;
 }
