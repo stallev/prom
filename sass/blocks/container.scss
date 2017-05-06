@@ -12,8 +12,7 @@
   }
   &--header-upper{
     position: relative;
-    background-image: url("../img/cont_upper_header_bg.png");
-    background-repeat: repeat-y;
+    background-color: $blue-bg-color;
     &::after{
       position: absolute;
       content: "";
