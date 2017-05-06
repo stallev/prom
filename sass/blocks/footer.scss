@@ -2,11 +2,13 @@
   background-color: $blue-bg-color;
   color: $body-color;
   &__address-content{
+    box-sizing: border-box;
     font-size: $fsz18;
     line-height: $lh19;
   }
   &__develop{
-    display: table-cell;
+    box-sizing: border-box;
+    display: block;
     vertical-align: middle;
   }
 }

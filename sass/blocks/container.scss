@@ -12,6 +12,7 @@
   &--header-upper{
     position: relative;
     background-color: $blue-bg-color;
+    padding-top: 20px;
     &::after{
       position: absolute;
       content: "";
@@ -42,7 +43,9 @@
 }
 
 @media (min-width: $screen-sm) {
-
+  .container--header-upper{
+    padding-top: 0;
+  }
 }
 @media (min-width: $screen-md) {
   .container--header-upper{

@@ -1,5 +1,4 @@
 .contacts{
-
   /*&::before{
     position: absolute;
     top: 0;
@@ -12,17 +11,32 @@
     border-left: 18px solid $dark-blue;
   }*/
   &__phones{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+
+  }
+  &__phones,
+  &__work-time{
+    text-align: center;
+    & a{
+      display: block;
+    }
+  }
+  &__phones-title{
+    margin-top: 30px;
   }
   &__phones-title,
   &__work-time-title{
+    display: block;
     font-weight: normal;
     text-transform: uppercase;
   }
 }
 @media (min-width: $screen-sm) {
-  .nav{
-
+  .contacts{
+    padding-top: 0;
+    &__phones-title{
+      margin-top: 0;
+    }
   }
 }
 @media (min-width: $screen-md) {
@@ -33,5 +47,10 @@
     font-size: $fsz18;
     line-height: $lh19;
     text-align: right;
+    padding-left: 40px;
+    &__phones,
+    &__work-time{
+      text-align: right;
+    }
   }
 }
