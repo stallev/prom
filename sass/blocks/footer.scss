@@ -36,4 +36,30 @@
     border-top: 21px solid transparent;
     border-left: 18px solid $dark-blue;
   }
+  .footer__develop{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer__develop-item{
+    text-align: right;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (min-width: $screen-sm) {
+
+  .footer__develop-item{
+    text-align: right;
+  }
+
+}
+@media (min-width: $screen-md) {
+  .footer__develop{
+    padding-top: 20px;
+  }
+  .footer__develop-item{
+    display: block;
+    text-align: right;
+  }
+
 }

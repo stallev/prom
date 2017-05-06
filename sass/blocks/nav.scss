@@ -62,9 +62,10 @@
 }
 @media (min-width: $screen-md) {
   .nav{
-    &--header{
-
+    &--footer{
+      padding: 20px 0;
     }
+
   }
   .nav__link--header-nav{
     padding: 52px 0;
@@ -72,6 +73,7 @@
     width: 23%;
   }
   .nav__link--footer-nav{
-    
+
+
   }
 }

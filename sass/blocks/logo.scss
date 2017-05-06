@@ -5,17 +5,7 @@
   box-sizing: border-box;
   background-color: $body-color;
   margin-bottom: 15px;
-  &::before{
-    position: absolute;
-    top: 0;
-    left: -38px;
-    width: 0;
-    height: 131px;
-    content: '';
-    border-top: 0 solid transparent;
-    border-bottom: 21px solid transparent;
-    border-right: 18px solid $dark-blue;
-  }
+
   &__image{
     display: block;
     margin: 0 auto;
@@ -31,5 +21,16 @@
   .logo{
     padding: 19px 0;
     margin-bottom: 0;
+    &::before{
+      position: absolute;
+      top: 0;
+      left: -38px;
+      width: 0;
+      height: 131px;
+      content: '';
+      border-top: 0 solid transparent;
+      border-bottom: 21px solid transparent;
+      border-right: 18px solid $dark-blue;
+    }
   }
 }
