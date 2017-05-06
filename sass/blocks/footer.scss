@@ -45,6 +45,10 @@
     display: block;
     margin: 0 auto;
   }
+  p.footer__address-content{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 @media (min-width: $screen-sm) {
 
@@ -61,5 +65,8 @@
     display: block;
     text-align: right;
   }
-
+  p.footer__address-content{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
