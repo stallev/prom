@@ -3178,24 +3178,11 @@ h4
     color: #575757;
 }
 
-.contacts
-{
-    /*&::before{
-    position: absolute;
-    top: 0;
-    right: -38px;
-    width: 0;
-    height: 131px;
-    content: '';
-    border-top: 0 solid transparent;
-    border-bottom: 21px solid transparent;
-    border-left: 18px solid $dark-blue;
-  }*/
-}
 .contacts__phones
 {
     margin-bottom: 10px;
 }
+
 .contacts__phones,
 .contacts__work-time
 {
@@ -3206,10 +3193,12 @@ h4
 {
     display: block;
 }
+
 .contacts__phones-title
 {
     margin-top: 30px;
 }
+
 .contacts__phones-title,
 .contacts__work-time-title
 {
@@ -3342,7 +3331,8 @@ h4
     {
         position: relative;
 
-        background-color: #2f83ba;
+        background-image: url('../img/cont_upper_header_bg.png');
+        background-repeat: repeat-y;
     }
     .container--header-upper::after
     {
@@ -3355,7 +3345,8 @@ h4
 
         content: '';
 
-        background-color: #2f83ba;
+        background-image: url('../img/cont_upper_header_bg.png');
+        background-repeat: repeat-y;
     }
 }
 
