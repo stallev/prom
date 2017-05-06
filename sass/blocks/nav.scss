@@ -1,5 +1,5 @@
 .nav{
-  display: table-cell;
+  //display: table-cell;
   box-sizing: border-box;
   vertical-align: middle;
   text-align: center;
@@ -16,7 +16,7 @@
     font-weight: normal;
     text-transform: uppercase;
     &--header-nav{
-      margin: 0 36px;
+      margin: 0 5px;
     }
     &--footer-nav{
       padding: 0 15px;
@@ -27,15 +27,33 @@
 .nav__link--footer-nav:nth-of-type(1){
   border-left: none;
 }
-.nav__link--header-nav-active{
-  position: relative;
-  &::before{
-    position: absolute;
-    content: "";
-    bottom: -75px;
-    left: 0;
-    border: 25px solid transparent;
-    border-bottom: 25px solid $body-color;
-    z-index: 20;
+.nav__link--header-nav{
+  &:hover{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      bottom: -25px;
+      left: 0;
+      border: 25px solid transparent;
+      border-bottom: 25px solid $body-color;
+      z-index: 20;
+    }
+  }
+}
+@media (min-width: $screen-sm) {
+  .nav{
+
+  }
+}
+@media (min-width: $screen-md) {
+  .nav{
+    &--header{
+      width: 560px;
+    }
+  }
+  .nav__link--header-nav{
+    padding: 25px 0;
+    margin: 0 5px;
   }
 }

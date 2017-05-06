@@ -1,8 +1,9 @@
 .logo{
   position: relative;
-  display: table-cell;
+  //display: table-cell;
   padding: 19px 0;
   width: 167px;
+  box-sizing: border-box;
   background-color: $body-color;
   &::before{
     position: absolute;
@@ -18,5 +19,15 @@
   &__image{
     display: block;
     margin: 0 auto;
+  }
+}
+@media (min-width: $screen-sm) {
+  .logo{
+
+  }
+}
+@media (min-width: $screen-md) {
+  .logo{
+
   }
 }

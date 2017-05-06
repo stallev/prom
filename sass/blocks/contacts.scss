@@ -1,13 +1,5 @@
 .contacts{
-  position: relative;
-  display: table-cell;
-  width: 214px;
-  box-sizing: border-box;
-  padding-left: 22px;
-  font-size: $fsz18;
-  line-height: $lh19;
-  vertical-align: middle;
-  text-align: right;
+
   /*&::before{
     position: absolute;
     top: 0;
@@ -28,10 +20,18 @@
     text-transform: uppercase;
   }
 }
-.x{
-  width: 0;
-  height: 50px;
-  border-left: 50px solid green;
-  border-top: 0 solid transparent;
-  border-bottom: 50px solid transparent;
+@media (min-width: $screen-sm) {
+  .nav{
+
+  }
+}
+@media (min-width: $screen-md) {
+  .contacts{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    font-size: $fsz18;
+    line-height: $lh19;
+    text-align: right;
+  }
 }
