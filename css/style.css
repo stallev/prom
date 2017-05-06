@@ -3428,6 +3428,11 @@ h4
 
     text-align: right;
 }
+.decor1 p.footer__address-content
+{
+    margin-top: 0; 
+    margin-bottom: 0;
+}
 
 @media (min-width: 768px)
 {
@@ -3448,6 +3453,11 @@ h4
         display: block;
 
         text-align: right;
+    }
+    p.footer__address-content
+    {
+        margin-top: 0; 
+        margin-bottom: 0;
     }
 }
 
