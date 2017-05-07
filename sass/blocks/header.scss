@@ -4,3 +4,30 @@
     background-color: $blue-bg-color;
   }
 }
+.header__logo-toggle{
+  &::after{
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+.header__toggle-button{
+  display: block;
+  margin-top: 20px;
+  float: right;
+  width: 30px;
+  height: 30px;
+  &--cross{
+    background-image: url("../img/cross.png");
+  }
+  &--hamburger{
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/hamburger.png");
+  }
+}
+@media (min-width: $screen-md) {
+  .header__toggle-button{
+    display: none;
+  }
+}

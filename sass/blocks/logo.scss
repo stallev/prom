@@ -1,11 +1,12 @@
 .logo{
   position: relative;
-  //display: table-cell;
+  float: left;
   padding: 5px 0;
   box-sizing: border-box;
   background-color: $body-color;
   margin-bottom: 15px;
-
+  width: 60px;
+  height: 60px;
   &__image{
     display: block;
     margin: 0 auto;
@@ -19,6 +20,8 @@
 }
 @media (min-width: $screen-md) {
   .logo{
+    width: 100%;
+    height: auto;
     padding: 19px 0;
     margin-bottom: 0;
     &::before{

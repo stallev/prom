@@ -11,24 +11,23 @@
   <header class="header">
     <div class="header__upper">
       <div class="container container--header-upper">
-        <div class="logo col-xs-4 col-sm-3 col-md-2 col-xs-offset-4 col-sm-offset-0">
-          <img src="img/logo.png" alt="logo" class="logo__image">
+        <div class="header__logo-toggle col-md-2">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo" class="logo__image">
+          </div>
+          <div class="header__toggle">
+            <button class="header__toggle-button header__toggle-button--cross"></button>
+          </div>
         </div>
-        <nav class="nav nav--header col-xs-12 col-sm-9 col-md-7">
-          <a href="#" class="nav__link nav__link--header-nav nav__link--header-nav-active">
-            главная
-          </a>
-          <a href="#" class="nav__link nav__link--header-nav">
-            о нас
-          </a>
-          <a href="#" class="nav__link nav__link--header-nav">
-            услуги
-          </a>
-          <a href="#" class="nav__link nav__link--header-nav">
-            контакты
-          </a>
+        <nav class="nav nav--header col-md-7">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">главная</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">о нас</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">услуги</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">контакты</a></li>
+          </ul>
         </nav>
-        <div class="contacts col-sm-12 col-md-3">
+        <div class="contacts col-md-3">
           <div class="contacts__phones col-xs-12 col-sm-6 col-md-12">
             <h3 class="contacts__phones-title">Наши телефоны</h3>
             <a class="contacts__phones-number" href="tel:+375295479569"> MTS: +375 29 <b>547-95-69</b></a>
@@ -279,6 +278,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js" type="application/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
