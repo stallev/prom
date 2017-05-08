@@ -33,9 +33,12 @@
     }
   }
 }
+.services__item:nth-of-type(1) img{
+  top: 3px;
+}
 .services__item:nth-of-type(2) img{
-  top: 6px;
-  left: -12px;
+  top: 4px;
+  left: -7px;
 }
 .services__item:nth-of-type(3) img{
   top: 11px;
@@ -46,13 +49,13 @@
   top: 8px;
 }
 .services__item:nth-of-type(5) img{
-  top: 6px;
-  left: -24px;
-  max-width: 120%;
+  top: 10px;
+  left: -32px;
+  max-width: 126%;
 }
 .services__item:nth-of-type(6) img{
-  top: 4px;
-  left: -17px;
+  top: 11px;
+  left: -16px;
 }
 .services__item:nth-of-type(7) img{
   top: 7px;

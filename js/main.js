@@ -10,12 +10,12 @@
   
   function onDisplayNav() {
     nav.style.display = 'block';
-    openMenuBtn.classList.add('header__toggle-button--cross');
-    openMenuBtn.classList.remove('header__toggle-button--hamburger');
+    openMenuBtn.style.display = 'none';
+    closeMenuBtn.style.display = 'block';
   }
   function onCloseNav() {
     nav.style.display = 'none';
-    closeMenuBtn.classList.add('header__toggle-button--hamburger');
-    closeMenuBtn.classList.remove('header__toggle-button--cross');
+    closeMenuBtn.style.display = 'none';
+    openMenuBtn.style.display = 'block';
   }
 })();

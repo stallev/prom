@@ -1,8 +1,9 @@
 .slide-title{
-  padding: 30px;
-  width: 450px;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 2%;
   &__text{
-    font-size: $fsz26;
+    font-size: $fsz20;
     font-weight: 700;
     text-transform: uppercase;
     text-align: left;
@@ -15,14 +16,10 @@
   right: 0;
   left: 20px;
   bottom: -25px;
-  padding-bottom: 35px;
+  padding-bottom: 25%;
 }
 .item__text-content{
-  width: 300px;
-  font-size: $fsz16;
-  color: $brown-color;
-  text-align: left;
-  text-shadow: none;
+  display: none;
 }
 .carousel-indicators {
   bottom: -12px;
@@ -38,4 +35,44 @@
 }
 .carousel-indicators .active{
   background-color: $blue-bg-color;
+}
+@media (min-width: $screen-sm) {
+  .slide-title{
+    width: 50%;
+    &__text{
+      font-size: $fsz26;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: left;
+    }
+  }
+  .carousel-caption{
+    padding-bottom: 22%;
+  }
+}
+@media (min-width: $screen-md) {
+  .slide-title{
+    padding: 30px;
+    width: 450px;
+    &__text{
+      font-size: $fsz26;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: left;
+    }
+  }
+  .item__text-content{
+    display: block;
+    width: 300px;
+    font-size: $fsz16;
+    color: $brown-color;
+    text-align: left;
+    text-shadow: none;
+  }
+  .carousel-caption{
+    right: 0;
+    left: 20px;
+    bottom: -25px;
+    padding-bottom: 35px;
+  }
 }

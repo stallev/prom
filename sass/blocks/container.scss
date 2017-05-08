@@ -1,5 +1,4 @@
 .container{
-  display: table;
   box-sizing: border-box;
   margin: 0 auto;
   &--about-us{
@@ -11,17 +10,9 @@
   }
   &--header-upper{
     position: relative;
+    display: table;
     background-color: $blue-bg-color;
     padding-top: 20px;
-    &::after{
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 20px;
-      background-color: $blue-bg-color;
-      bottom: -20px;
-      left: 0;
-    }
   }
   &--header-bottom{
     box-sizing: border-box;
@@ -30,15 +21,7 @@
   }
   &--footer-container{
     position: relative;
-    &::before{
-      position: absolute;
-      content: "";
-      top: -19px;
-      left: 0;
-      width: 100%;
-      height: 20px;
-      background-color: $blue-bg-color;
-    }
+    padding-top: 20px;
   }
 }
 
@@ -61,6 +44,18 @@
       background-repeat: repeat-y;
       bottom: -20px;
       left: 0;
+    }
+  }
+  .container--footer-container{
+    padding-top: 0;
+    &::before{
+      position: absolute;
+      content: "";
+      top: -19px;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background-color: $blue-bg-color;
     }
   }
 }
