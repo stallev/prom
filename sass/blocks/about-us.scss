@@ -1,0 +1,13 @@
+.about-us{
+  position: relative;
+  &__content{
+    padding: 40px 0 15px 0;
+    &-item{
+      font-size: $fsz18;
+      line-height: $lh22;
+      color: $brown-color;
+      margin-bottom: 5px;
+
+    }
+  }
+}

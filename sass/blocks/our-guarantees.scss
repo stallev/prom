@@ -1,0 +1,49 @@
+.our-guarantees{
+  background-color: $brown-color;
+  &__list{
+    display: inline-block;
+    font-size: 0;
+    text-align: center;
+  }
+  &__item {
+    display: inline-block;
+    text-align: center;
+    width: 158px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    vertical-align: top;
+    &-link {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      width: 131px;
+      height: 131px;
+      background-color: $body-color;
+      border-radius: 50%;
+      text-align: center;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-bottom: 16px;
+    }
+    &-title{
+      color: $body-color;
+      font-size: $fsz18;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+  }
+}
+.our-guarantees__item:nth-child(1) .our-guarantees__item-link{
+  background-image: url("../img/stuff.svg");
+}
+.our-guarantees__item:nth-child(2) .our-guarantees__item-link{
+  background-image: url("../img/terms.svg");
+}
+.our-guarantees__item:nth-child(3) .our-guarantees__item-link{
+  background-image: url("../img/mark.svg");
+}
+.our-guarantees__item:nth-child(4) .our-guarantees__item-link{
+  background-image: url("../img/guarantee.svg");
+}.our-guarantees__item:nth-child(5) .our-guarantees__item-link{
+   background-image: url("../img/consult.svg");
+ }

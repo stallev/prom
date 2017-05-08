@@ -1,4 +1,8 @@
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+@import "from__bootstrap/variables";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+
+@import "from__bootstrap/grid";
+@import "from__bootstrap/carousel";

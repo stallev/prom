@@ -1,0 +1,62 @@
+.container{
+  box-sizing: border-box;
+  margin: 0 auto;
+  &--about-us{
+    background-image: url("../img/about-us-bg.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+  }
+  &--services-container{
+  }
+  &--header-upper{
+    position: relative;
+    display: table;
+    background-color: $blue-bg-color;
+    padding-top: 20px;
+  }
+  &--header-bottom{
+    box-sizing: border-box;
+    padding-top: 42px;
+    padding-bottom: 13px;
+  }
+  &--footer-container{
+    position: relative;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .container--header-upper{
+    padding-top: 0;
+  }
+}
+@media (min-width: $screen-md) {
+  .container--header-upper{
+    position: relative;
+    background-image: url("../img/cont_upper_header_bg.png");
+    background-repeat: repeat-y;
+    &::after{
+      position: absolute;
+      content: "";
+      width: 980px;
+      left: 20px;
+      height: 20px;
+      background-color: $blue-bg-color;
+      background-image: url("../img/cont_upper_header_after_bg.png");
+      background-repeat: repeat-y;
+      bottom: -20px;
+    }
+  }
+  .container--footer-container{
+    padding-top: 0;
+    &::before{
+      position: absolute;
+      content: "";
+      top: -19px;
+      left: 20px;
+      width: 980px;
+      height: 20px;
+      background-color: $blue-bg-color;
+    }
+  }
+}

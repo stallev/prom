@@ -1,0 +1,56 @@
+.contacts{
+  &__phones{
+    margin-bottom: 10px;
+
+  }
+  &__phones,
+  &__work-time{
+    text-align: center;
+    & a{
+      display: block;
+    }
+  }
+  &__phones-title{
+    margin-top: 30px;
+  }
+  &__phones-title,
+  &__work-time-title{
+    display: block;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: $screen-sm) {
+  .contacts{
+    padding-top: 0;
+    &__phones-title{
+      margin-top: 0;
+    }
+  }
+}
+@media (min-width: $screen-md) {
+  .contacts{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    font-size: $fsz18;
+    line-height: $lh19;
+    text-align: right;
+    padding-left: 40px;
+    &::before {
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 0;
+      height: 131px;
+      content: '';
+      border-top: 0 solid transparent;
+      border-bottom: 22px solid transparent;
+      border-left: 20px solid $dark-blue;
+    }
+    &__phones,
+    &__work-time{
+      text-align: right;
+    }
+  }
+}

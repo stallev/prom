@@ -1,0 +1,29 @@
+
+$grid-gutter-width: 0;
+$screen-xs:                  480px !default;
+$screen-sm:                  768px !default;
+$screen-md:                  1020px !default;
+$screen-lg:                  10980px !default;
+@media (min-width: $screen-lg-min) {
+  @include make-grid(md);
+}
+$container-tablet:             (720px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet;
+
+//** For `$screen-md-min` and up.
+$container-md: 980px;
+.container{
+  padding: 0 20px;
+  @media (min-width: $screen-sm) {
+    width: $container-sm;
+  }
+  @media (min-width: 1020px) {
+    width: 1020px;
+    padding: 0 40px;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-md;
+  }
+}
+
