@@ -2,7 +2,7 @@
 $grid-gutter-width: 0;
 $screen-xs:                  480px !default;
 $screen-sm:                  768px !default;
-$screen-md:                  980px !default;
+$screen-md:                  1020px !default;
 $screen-lg:                  10980px !default;
 @media (min-width: $screen-lg-min) {
   @include make-grid(md);
@@ -18,8 +18,9 @@ $container-md: 980px;
   @media (min-width: $screen-sm) {
     width: $container-sm;
   }
-  @media (min-width: 980px) {
-    width: $container-md;
+  @media (min-width: 1020px) {
+    width: 1020px;
+    padding: 0 40px;
   }
   @media (min-width: $screen-lg-min) {
     width: $container-md;

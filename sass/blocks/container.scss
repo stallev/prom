@@ -38,12 +38,13 @@
     &::after{
       position: absolute;
       content: "";
-      width: 100%;
+      width: 980px;
+      left: 20px;
       height: 20px;
-      background-image: url("../img/cont_upper_header_bg.png");
+      background-color: $blue-bg-color;
+      background-image: url("../img/cont_upper_header_after_bg.png");
       background-repeat: repeat-y;
       bottom: -20px;
-      left: 0;
     }
   }
   .container--footer-container{
@@ -52,8 +53,8 @@
       position: absolute;
       content: "";
       top: -19px;
-      left: 0;
-      width: 100%;
+      left: 20px;
+      width: 980px;
       height: 20px;
       background-color: $blue-bg-color;
     }
