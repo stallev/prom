@@ -40,13 +40,13 @@
     &::before {
       position: absolute;
       top: 0;
-      right: -38px;
+      right: -40px;
       width: 0;
       height: 131px;
       content: '';
       border-top: 0 solid transparent;
-      border-bottom: 21px solid transparent;
-      border-left: 18px solid $dark-blue;
+      border-bottom: 22px solid transparent;
+      border-left: 20px solid $dark-blue;
     }
     &__phones,
     &__work-time{
