@@ -1502,7 +1502,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus
         width: 720px;
     }
 }
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .container
     {
@@ -2103,7 +2103,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus
     }
 }
 
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .col-md-1,
     .col-md-2,
@@ -3077,11 +3077,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus
         width: 720px;
     }
 }
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .container
     {
-        width: 980px;
+        width: 1020px;
+        padding: 0 40px;
     }
 }
 @media (min-width: 100200px)
@@ -3221,7 +3222,7 @@ h4
     }
 }
 
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .contacts
     {
@@ -3241,7 +3242,7 @@ h4
     {
         position: absolute;
         top: 0;
-        right: -38px;
+        right: -40px;
 
         width: 0;
         height: 131px;
@@ -3249,8 +3250,8 @@ h4
         content: '';
 
         border-top: 0 solid transparent;
-        border-bottom: 21px solid transparent;
-        border-left: 18px solid #0065a1;
+        border-bottom: 22px solid transparent;
+        border-left: 20px solid #0065a1;
     }
     .contacts__phones,
     .contacts__work-time
@@ -3301,7 +3302,7 @@ h4
     }
 }
 
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .container--header-upper
     {
@@ -3313,15 +3314,16 @@ h4
     .container--header-upper::after
     {
         position: absolute;
-        bottom: -20px;
-        left: 0; 
+        bottom: -20px; 
+        left: 20px;
 
-        width: 100%;
+        width: 980px;
         height: 20px;
 
         content: '';
 
-        background-image: url('../img/cont_upper_header_bg.png');
+        background-color: #2f83ba;
+        background-image: url('../img/cont_upper_header_after_bg.png');
         background-repeat: repeat-y;
     }
     .container--footer-container
@@ -3332,9 +3334,9 @@ h4
     {
         position: absolute;
         top: -19px;
-        left: 0;
+        left: 20px;
 
-        width: 100%;
+        width: 980px;
         height: 20px;
 
         content: '';
@@ -3396,7 +3398,7 @@ h4
     }
 }
 
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .footer__develop
     {
@@ -3497,7 +3499,7 @@ h4
     background-image: url('../img/hamburger.png');
 }
 
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .header__toggle-button
     {
@@ -3536,7 +3538,7 @@ h4
     }
 }
 
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .logo
     {
@@ -3550,7 +3552,7 @@ h4
     {
         position: absolute;
         top: 0;
-        left: -38px;
+        left: -40px;
 
         width: 0;
         height: 131px;
@@ -3558,8 +3560,8 @@ h4
         content: '';
 
         border-top: 0 solid transparent;
-        border-right: 18px solid #0065a1; 
-        border-bottom: 21px solid transparent;
+        border-right: 20px solid #0065a1; 
+        border-bottom: 22px solid transparent;
     }
 }
 
@@ -3647,7 +3649,7 @@ h4
     }
 }
 
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .nav
     {
@@ -3957,11 +3959,12 @@ h4
 
 .carousel-caption
 {
+    top: 5%;
     right: 0;
     bottom: -25px;
     left: 20px;
 
-    padding-bottom: 25%;
+    padding-bottom: 0;
 }
 
 .item__text-content
@@ -4007,16 +4010,16 @@ h4
     }
     .carousel-caption
     {
-        padding-bottom: 22%;
+        padding-bottom: 0;
     }
 }
 
-@media (min-width: 980px)
+@media (min-width: 1020px)
 {
     .slide-title
     {
         width: 450px; 
-        padding: 30px;
+        padding: 15px;
     }
     .slide-title__text
     {
@@ -4045,6 +4048,6 @@ h4
         bottom: -25px;
         left: 20px;
 
-        padding-bottom: 35px;
+        padding-bottom: 60px;
     }
 }
