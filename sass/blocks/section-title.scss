@@ -1,7 +1,7 @@
 .section-title{
   position: relative;
   margin: 0 auto;
-  width: 245px;
+  width: 220px;
   margin-bottom: 22px;
   text-align: center;
   font-family: 'Days', Arial, sans-serif;
@@ -9,25 +9,30 @@
   text-transform: uppercase;
   font-weight: 700;
   padding: 12px 0;
+  z-index: 5;
   &::before{
     position: absolute;
-    content: "";
-    top: 1px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 46px solid $blue-bg-color;
-    border-right: 20px solid transparent;
+    z-index: -1;
+    top: -4px;
+    bottom: 0;
+    left: 25px;
+    width: 100%;
+    content: '';
+    transform: skew(-25deg);
+    border-radius: 7px;
+    background-color: inherit;
   }
   &::after{
     position: absolute;
-    top: 1px;
-    right: 0;
-    width: 0;
-    height: 0;
     content: '';
-    border-left: 20px solid transparent;
-    border-bottom: 46px solid $blue-bg-color;
+    top: -4px;
+    right: 25px;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    transform: skew(25deg);
+    border-radius: 7px;
+    background-color: inherit;
   }
   &--services{
     color: $blue-bg-color;
